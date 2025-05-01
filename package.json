@@ -1,0 +1,28 @@
+{
+  "name": "elegancyart-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "fix": "node smart-auto-fix-v3.js",
+    "dev": "npm run fix && next dev",
+    "build": "npm run fix && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepush": "npm run fix && npm run lint && npm run build"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^5.4.0",
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.24",
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.17",
+    "husky": "^9.0.7"
+  }
+}
