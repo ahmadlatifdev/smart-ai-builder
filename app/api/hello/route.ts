@@ -1,6 +1,13 @@
+import { NextResponse } from 'next/server';
+
+export const runtime = 'nodejs';
+
 export async function GET() {
-  return new Response(JSON.stringify({ message: "Hello from Smart AI Builder!" }), {
-    status: 200,
-    headers: { "Content-Type": "application/json" }
-  });
+  return NextResponse.json(
+    {
+      ok: true,
+      message: 'Smart AI Builder API hello endpoint is live on Railway.',
+    },
+    { status: 200 },
+  );
 }
